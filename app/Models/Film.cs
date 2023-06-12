@@ -16,6 +16,9 @@ namespace app.Models
 
         [Required]
         public int Trajanje { get; set; }
+        public double Cijena { get; set; }
+
+        [Required]
 
         [ForeignKey("Zanr")]
         public int ZanrId { get; set; }
@@ -25,5 +28,6 @@ namespace app.Models
 
         public virtual Zanr Zanr { get; set; }
         public virtual Drzava Drzava { get; set; }
+
     }
 }
