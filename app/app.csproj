@@ -132,6 +132,10 @@
     <Compile Include="Migrations\202306051212253_int.designer.cs">
       <DependentUpon>202306051212253_int.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306120839019_dodanaCijena.cs" />
+    <Compile Include="Migrations\202306120839019_dodanaCijena.designer.cs">
+      <DependentUpon>202306120839019_dodanaCijena.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FilmoviDbContext.cs" />
     <Compile Include="Models\Zanr.cs" />
@@ -197,6 +201,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202306051212253_int.resx">
       <DependentUpon>202306051212253_int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306120839019_dodanaCijena.resx">
+      <DependentUpon>202306120839019_dodanaCijena.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

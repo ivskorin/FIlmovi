@@ -11,6 +11,7 @@
             <th>Naziv</th>
             <th>Trajanje</th>
             <th>Zanr</th>
+            <th>Cijena</th>
 
 
 
@@ -19,12 +20,13 @@
     <tbody>
         @foreach (var film in Model)
         {
-            <tr>
-                <td>@film.Naziv</td>
-                <td>@film.Trajanje</td>
-                <td>@film.Zanr.Naziv</td>
+        <tr>
+            <td>@film.Naziv</td>
+            <td>@film.Trajanje</td>
+            <td>@film.Zanr.Naziv</td>
+            <td>@film.Cijena</td>
 
-            </tr>
+        </tr>
         }
     </tbody>
 
