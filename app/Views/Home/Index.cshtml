@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Trajanje</th>
+            <th>Zanr</th>
+            <th>Država</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var film in Model)
+        {
+        <tr>
+            <td>@film.Naziv</td>
+            <td>@film.Trajanje</td>
+            <td><a href="@Url.Action("FilmoviPoZanru", new { zanrId = film.Zanr.Id })">@film.Zanr.Naziv</a></td>
+            <td>@film.Drzava.Naziv</td>
+        </tr>
+        }
+    </tbody>
+</table>
