@@ -140,6 +140,10 @@
     <Compile Include="Migrations\202306121149138_Create_table_Glumci.designer.cs">
       <DependentUpon>202306121149138_Create_table_Glumci.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306130738183_dodanFKnaGlumci.cs" />
+    <Compile Include="Migrations\202306130738183_dodanFKnaGlumci.designer.cs">
+      <DependentUpon>202306130738183_dodanFKnaGlumci.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FilmoviDbContext.cs" />
     <Compile Include="Models\Glumci.cs" />
@@ -212,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202306121149138_Create_table_Glumci.resx">
       <DependentUpon>202306121149138_Create_table_Glumci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306130738183_dodanFKnaGlumci.resx">
+      <DependentUpon>202306130738183_dodanFKnaGlumci.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

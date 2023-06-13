@@ -12,6 +12,7 @@
             <th>Zanr</th>
             <th>Država</th>
             <th>Cijena</th>
+            <th>Glumac</th>
 
 
         </tr>
@@ -25,6 +26,7 @@
             <td><a href="@Url.Action("FilmoviPoZanru", new { zanrId = film.Zanr.Id })">@film.Zanr.Naziv</a></td>
             <td>@film.Drzava.Naziv</td>
             <td>@film.Cijena</td>
+            <td>@film.Glumci.Ime</td>
         </tr>
         }
     </tbody>

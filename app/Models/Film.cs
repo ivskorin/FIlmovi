@@ -23,11 +23,19 @@ namespace app.Models
         [ForeignKey("Zanr")]
         public int ZanrId { get; set; }
 
+        [Required]
         [ForeignKey("Drzava")]
         public int DrzavaId { get; set; }
 
+        [Required]
+        [ForeignKey("Glumci")]
+        public int GlumciId { get; set; }
+
+
         public virtual Zanr Zanr { get; set; }
         public virtual Drzava Drzava { get; set; }
+        public virtual Glumci Glumci { get; set; }
+
 
     }
 }
