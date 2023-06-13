@@ -9,6 +9,10 @@
     <thead>
         <tr>
             <th>Naziv</th>
+
+            <th>Zanr</th>
+            <th>Trajanje</th>
+
             <th>Cijena</th>
             <th>Zanr</th>
             <th>Trajanje</th>
@@ -24,6 +28,11 @@
         {
         <tr>
             <td>@film.Naziv</td>
+
+
+            <td>@film.Zanr.Naziv</td>
+            <td>@film.Trajanje</td>
+
             <td>@film.Cijena</td>
             <td>@film.Zanr.Naziv</td>
             <td>@film.Glumci.Ime</td>
