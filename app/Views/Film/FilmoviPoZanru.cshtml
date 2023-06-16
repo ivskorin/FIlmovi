@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Filmovi Po Zanru";
+}
+
+<h2>Filmovi Po Zanru</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Trajanje</th>
+            <th>Zanr</th>
+            <th>Cijena</th>
+
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var film in Model)
+        {
+            <tr>
+                <td>@film.Naziv</td>
+                <td>@film.Trajanje</td>
+                <td>@film.Zanr.Naziv</td>
+                <td>@film.Cijena</td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+<p>Svi filmovi se mogu posuditi na 3 dana</p>

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<app.Models.Film>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Drzava.Naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Glumci.Ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zanr.Naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trajanje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cijena)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Drzava.Naziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Glumci.Ime)
+        </td>
+        <td>
+            <a href="@Url.Action("FilmoviPoZanru","Film")"> @Html.DisplayFor(modelItem => item.Zanr.Naziv) </a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trajanje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cijena)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
