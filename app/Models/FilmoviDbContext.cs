@@ -17,6 +17,8 @@ namespace app.Models
         public DbSet<Drzava> Drzave { get; set; }
 
         public DbSet<Glumci> Glumci { get; set; }
+        public DbSet<Korisnik> Korisnici { get; set; }
+
     }
 
 }

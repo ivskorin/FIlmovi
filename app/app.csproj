@@ -127,7 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\FilmController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Migrations\202306051212253_int.cs" />
     <Compile Include="Migrations\202306051212253_int.designer.cs">
       <DependentUpon>202306051212253_int.cs</DependentUpon>
@@ -143,6 +143,10 @@
     <Compile Include="Migrations\202306130738183_dodanFKnaGlumci.cs" />
     <Compile Include="Migrations\202306130738183_dodanFKnaGlumci.designer.cs">
       <DependentUpon>202306130738183_dodanFKnaGlumci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306191117598_korisnikDb.cs" />
+    <Compile Include="Migrations\202306191117598_korisnikDb.Designer.cs">
+      <DependentUpon>202306191117598_korisnikDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FilmoviDbContext.cs" />
@@ -189,13 +193,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Film\Create.cshtml" />
     <Content Include="Views\Film\Delete.cshtml" />
     <Content Include="Views\Film\Details.cshtml" />
     <Content Include="Views\Film\Edit.cshtml" />
     <Content Include="Views\Film\Index.cshtml" />
     <Content Include="Views\Film\FilmoviPoZanru.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -225,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202306130738183_dodanFKnaGlumci.resx">
       <DependentUpon>202306130738183_dodanFKnaGlumci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306191117598_korisnikDb.resx">
+      <DependentUpon>202306191117598_korisnikDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

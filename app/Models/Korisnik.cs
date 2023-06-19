@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.ComponentModel;
 
 namespace app.Models
 {
@@ -11,23 +12,25 @@ namespace app.Models
         [Key]
         public int Id { get; set; }
 
-        
         [Required]
         [StringLength(100)]
-        public int Ime { get; set; }
+        public string Ime { get; set; }
 
         [Required]
         [StringLength(100)]
-        public int Prezime { get; set; }
+        public string Prezime { get; set; }
 
         [Required]
         [StringLength(100)]
-        public int Username { get; set; }
+        [DisplayName("User name")]
+        public string Username { get; set; }
 
         [Required]
         [StringLength(100)]
-        public int Password { get; set; }
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
 
+        public string LoginErrorMessage { get; set; }
 
     }
 }
