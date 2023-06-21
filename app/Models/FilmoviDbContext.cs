@@ -18,6 +18,7 @@ namespace app.Models
 
         public DbSet<Glumci> Glumci { get; set; }
         public DbSet<Korisnik> Korisnici { get; set; }
+        public DbSet<Rola> Role { get; set; }
 
     }
 

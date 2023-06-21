@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using System.ComponentModel;
@@ -31,6 +32,13 @@ namespace app.Models
         public string Password { get; set; }
 
         public string LoginErrorMessage { get; set; }
+
+        [Required]
+        [ForeignKey("Rola")]
+        public int RolaId { get; set; }
+
+
+        public virtual Rola Rola { get; set; }
 
     }
 }

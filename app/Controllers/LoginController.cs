@@ -25,11 +25,17 @@ namespace app.Controllers
                     korisnik.LoginErrorMessage = "Krivi username ili šifra.";
                     return View("Index", korisnik);
                 }
-                else
+                else if(userDetails.RolaId == 1)
                 {
                     Session["Id"] = korisnik.Id;
                     return RedirectToAction("Index", "Film");
                 }
+
+                else {
+                    Session["Id"] = korisnik.Id;
+                    return RedirectToAction("Index", "Korisnik");
+                }
+
             }
 
             return View("Index", "Film");
